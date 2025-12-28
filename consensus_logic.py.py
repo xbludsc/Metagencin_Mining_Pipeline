@@ -25,6 +25,7 @@ def apply_consensus_rules(macrel_result, camp_svm_prob, camp_rf_prob, camp_da_pr
         return "Rejected (No Consensus)"
 
 if __name__ == "__main__":
-    # Test with hypothetical values (NO REAL DATA HERE)
-    test_result = apply_consensus_rules("AMP", 0.45, 0.65, 0.20)
+    # Test with hypothetical values (NO REAL DATA)
+    # Scenario: Macrel says AMP, but CAMP scores are too low.
+    test_result = apply_consensus_rules("AMP", 0.45, 0.20, 0.20)
     print(f"Hypothetical Test Verdict: {test_result}")
